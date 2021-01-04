@@ -48,5 +48,6 @@
   position: relative;
   width: calc(100% - 170px);
   left: 170px;
+  background: darkgray;
 }
 /*# sourceMappingURL=style.css.map */
