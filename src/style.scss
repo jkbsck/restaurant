@@ -1,3 +1,10 @@
+// heading font
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+// variables
+$dirtyGold: rgba(109, 85, 25, 0.85);
+$maxYellowRed: #ffc857;
+
 // config
 * {
   box-sizing: border-box;
@@ -6,6 +13,13 @@
 }
 
 // content
+.content {
+  background: url(https://i.pinimg.com/originals/df/80/8f/df808f6bfc95b04ecfa02502c905ca7e.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
 .top-wrapper {
   position: relative;
   height: 200px;
@@ -17,7 +31,9 @@
     bottom: 0;
     left: 50px;
     border-top-left-radius: 50%;
-    background: rgba(184, 135, 11, 0.5);
+    background: $dirtyGold;
+    border-left: solid 3px #222;
+    border-top: solid 3px #222;
   }
   .title {
     position: absolute;
@@ -25,25 +41,61 @@
     width: 80%;
     bottom: 0;
     left: 170px;
-    background: rgba(184, 135, 11, 0.5);
+    background: linear-gradient(to right, $dirtyGold, $dirtyGold 30%, #ffffff00);
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    border-top: solid 3px #222;
+    h1 {
+      font-family: 'Redressed', cursive;
+      font-size: 60px;
+      color: #222;
+    }
   }
 }
 
 .bottom-wrapper {
   position: relative;
   width: 100%;
+  margin-top: -15px;
   .navbar {
     position: absolute;
     height: 600px;
-    width: 120px;
+    width: 150px;
     top: 0;
     left: 50px;
-    background: rgba(184, 135, 11, 0.5);
+    background: linear-gradient($dirtyGold, $dirtyGold 30%, #ffffff00);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    border-left: solid 3px #222;
+    div {
+      margin: 5px auto;
+      padding: 10px;
+      background: rgba(60, 47, 31, 0.7);
+      color: rgba(204, 204, 204, 0.9);
+      font-weight: 700;
+      font-size: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      width: 80%;
+      border: solid 2px #222;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        background: transparentize($color: $maxYellowRed, $amount: .3);
+        color: #222;
+      }
+    }
   }
+  
   .page-content {
     position: relative;
-    width: calc(100% - 170px);
-    left: 170px;
-    background: darkgray;
+    width: calc(100% - 250px);
+    left: 200px;
+    background: transparentize($color: $maxYellowRed, $amount: .2);
+    padding: 10px;
+    border-radius: 20px;
+    border: solid 3px #222;
   }
 }
