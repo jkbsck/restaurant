@@ -53,11 +53,11 @@ const mainPage = (() => {
     _pageContent.appendChild(description);
   };
 
-const build = () => {
-  _buildWelcome();
-  _buildRestaurantImg();
-  _buildDescription();
-};
+  const build = () => {
+    _buildWelcome();
+    _buildRestaurantImg();
+    _buildDescription();
+  };
 
   return { build }
 })();
