@@ -104,11 +104,43 @@
 
 .bottom-wrapper .page-content {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: calc(100% - 250px);
   left: 200px;
   background: rgba(255, 200, 87, 0.8);
   padding: 10px;
   border-radius: 20px;
   border: solid 3px #222;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #222;
+}
+
+.welcome {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+}
+
+.restaurant-img img {
+  border: solid 3px #222;
+  border-radius: 10px;
+}
+
+.description > * {
+  padding: 3px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,7 @@ const mainPage = (() => {
 
   const _buildWelcome = () => {
     const welcome = document.createElement("div");
+    welcome.classList.add("welcome");
     const welcomeH3 = document.createElement("h3");
     welcomeH3.textContent = "Welcome to The Restaurant";
     welcome.appendChild(welcomeH3);
@@ -12,12 +13,14 @@ const mainPage = (() => {
 
   const _buildRestaurantImg = () => {
     const restaurantImg = document.createElement("div");
+    restaurantImg.classList.add("restaurant-img");
     restaurantImg.innerHTML = `<img src="https://www.jasna.sk/fileadmin/_processed_/d/0/csm_angusrestaurant_hotelposta_jasna_1_410b6c62d4.jpg" alt="photo of restaurant interior"></img>`
     _pageContent.appendChild(restaurantImg);
   };
 
   const _buildDescription = () => {
     const description = document.createElement("div");
+    description.classList.add("description");
     
     const p1 = document.createElement("p");
     p1.textContent = "Inspired by American gastronomy, new gastronomic experiences are brought to the centre of the town.";
