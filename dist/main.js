@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/delivery.js":
+/*!*************************!*\
+  !*** ./src/delivery.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"delivery_\": () => /* binding */ delivery_\n/* harmony export */ });\nconst delivery_ = (() => {\n  const _pageContent = document.querySelector(\".page-content\");\n  \n  const _buildList = () => {\n    const list = document.createElement(\"div\");\n    list.classList.add(\"list\");\n\n    const listTitleDiv = document.createElement(\"div\");\n    listTitleDiv.classList.add(\"list-title\");\n\n    const listTitle = document.createElement(\"h1\");\n    listTitle.textContent = \"Pick, Pay & Eat just by few clicks.\";\n    listTitleDiv.appendChild(listTitle);\n    list.appendChild(listTitleDiv);\n\n    const meals = [\"Potato Gnocchi with Sheep Cheese\", \"Chicken Heads\", \"Grilled Rats\", \"Beef Steak\", \"Raw Turkey on Peas\", \"Cooked Wuhan Bat\", \"Fried Lamb Thigh with Dried Wasps\", \"French Fries\", \"Meshed Potatos\", \"Rice\", \"Roasted Potatos\", \"Creamy Garlic Soup\", \"Soup with Secret Ingredients\", \"Vegan Soup with Gun Powder Seasoning\"];\n\n    meals.forEach(meal => {\n      const mealNameDiv = document.createElement(\"div\");\n      mealNameDiv.classList.add(\"meal-name\");\n\n      const mealName = document.createElement(\"h3\");\n      mealName.textContent = meal;\n      mealNameDiv.appendChild(mealName);\n\n      const priceDiv = document.createElement(\"div\");\n      priceDiv.classList.add(\"price-pick\");\n      \n      const price = document.createElement(\"h3\");\n      price.textContent = \"4.99$\";\n      priceDiv.appendChild(price);\n\n      const pickLabel = document.createElement(\"h5\");\n      pickLabel.textContent = \"quantity:\";\n      priceDiv.appendChild(pickLabel);\n\n      const pick = document.createElement(\"input\");\n      pick.type = \"number\";\n      priceDiv.appendChild(pick);\n      \n      mealNameDiv.appendChild(priceDiv);\n\n      list.appendChild(mealNameDiv);\n    });\n\n    const proceedDiv = document.createElement(\"div\");\n    proceedDiv.classList.add(\"proceed\");\n\n    const proceed = document.createElement(\"div\");\n\n    const proceedH1 = document.createElement(\"h1\");\n    proceedH1.textContent = \"PROCEED\";\n    proceed.appendChild(proceedH1);\n\n    proceedDiv.appendChild(proceed);\n\n    list.appendChild(proceedDiv);\n\n    _pageContent.appendChild(list);\n  };\n  \n  const build = () => {\n    _buildList();\n  };\n\n  return { build };\n})();\n\n // delivery won't work - allegedly is already defined\n\n\n//# sourceURL=webpack://restaurant-page/./src/delivery.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_page_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main-page.js */ \"./src/main-page.js\");\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu.js */ \"./src/menu.js\");\n\n\n\n// mainPage.build();\n_menu_js__WEBPACK_IMPORTED_MODULE_1__.menu.build();\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _delivery_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./delivery.js */ \"./src/delivery.js\");\n/* harmony import */ var _main_page_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main-page.js */ \"./src/main-page.js\");\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu.js */ \"./src/menu.js\");\n\n\n\n\n\n// mainPage.build();\n// menu.build();\n_delivery_js__WEBPACK_IMPORTED_MODULE_0__.delivery_.build(); // delivery won't work - allegedly is already defined\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 

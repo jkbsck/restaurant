@@ -160,6 +160,9 @@ $maxYellowRed: #ffc857;
     text-align: center;
     border-right: solid 2px #222;
     margin: 5px 0;
+    :nth-child(1) h2 {
+      color: rgb(140, 50, 0);
+    }
   }
   .right-div {
     display: flex;
@@ -168,6 +171,59 @@ $maxYellowRed: #ffc857;
     padding-left: 16px;
     h5 {
       color: #444;
+    }
+  }
+}
+
+// delivery
+.list {
+  .list-title {
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #222;
+  }
+  .meal-name {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    .price-pick {
+      display: flex;
+      align-items: center;
+      h3 {
+        color: rgb(202, 9, 9);
+      }
+      & > * {
+        padding: 0 7px;
+      }
+      input {
+        width: 50px;
+        padding-right: 0;
+      }
+    }
+  }
+  .proceed {
+    padding-bottom: 10px;
+    border-top: solid 1px #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    div {
+      height: 50px;
+      width: 180px;
+      background: rgba(60, 47, 31, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: solid 2px #222;
+      border-radius: 5px;
+      color: #222;
+      cursor: pointer;
+      &:hover {
+        background: darken($color: $maxYellowRed, $amount: 25);
+        color: rgba(220, 220, 220, 0.9);
+      }
     }
   }
 }

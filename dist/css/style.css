@@ -191,6 +191,10 @@
   margin: 5px 0;
 }
 
+.day .left-div :nth-child(1) h2 {
+  color: #8c3200;
+}
+
 .day .right-div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,5 +211,83 @@
 
 .day .right-div h5 {
   color: #444;
+}
+
+.list .list-title {
+  text-align: center;
+  margin: 20px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #222;
+}
+
+.list .meal-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5px 0;
+}
+
+.list .meal-name .price-pick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list .meal-name .price-pick h3 {
+  color: #ca0909;
+}
+
+.list .meal-name .price-pick > * {
+  padding: 0 7px;
+}
+
+.list .meal-name .price-pick input {
+  width: 50px;
+  padding-right: 0;
+}
+
+.list .proceed {
+  padding-bottom: 10px;
+  border-top: solid 1px #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+}
+
+.list .proceed div {
+  height: 50px;
+  width: 180px;
+  background: rgba(60, 47, 31, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 2px #222;
+  border-radius: 5px;
+  color: #222;
+  cursor: pointer;
+}
+
+.list .proceed div:hover {
+  background: #d79000;
+  color: rgba(220, 220, 220, 0.9);
 }
 /*# sourceMappingURL=style.css.map */
