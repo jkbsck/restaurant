@@ -121,6 +121,11 @@
   color: #222;
 }
 
+.active {
+  background: rgba(255, 200, 87, 0.7) !important;
+  color: #222 !important;
+}
+
 .bg-blur {
   position: fixed;
   width: 100%;
@@ -289,5 +294,19 @@
 .list .proceed div:hover {
   background: #d79000;
   color: rgba(220, 220, 220, 0.9);
+}
+
+.contact-container {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 /*# sourceMappingURL=style.css.map */

@@ -104,6 +104,12 @@ $maxYellowRed: #ffc857;
   }
 }
 
+// when menu item is clicked
+.active {
+  background: transparentize($color: $maxYellowRed, $amount: .3) !important;
+  color: #222 !important;
+}
+
 // backgrounf blur
 .bg-blur {
   position: fixed;
@@ -226,4 +232,12 @@ $maxYellowRed: #ffc857;
       }
     }
   }
+}
+
+// contact
+.contact-container {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }

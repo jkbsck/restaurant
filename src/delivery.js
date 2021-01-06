@@ -1,4 +1,4 @@
-const delivery_ = (() => {
+const delivery = (() => {
   const _pageContent = document.querySelector(".page-content");
   
   const _buildList = () => {
@@ -66,4 +66,4 @@ const delivery_ = (() => {
   return { build };
 })();
 
-export { delivery_ }; // delivery won't work - allegedly is already defined
+export { delivery }; // delivery won't work - allegedly is already defined
